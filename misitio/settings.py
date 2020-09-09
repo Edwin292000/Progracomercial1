@@ -25,7 +25,7 @@ SECRET_KEY = '7!!1y8h=getyq#c2d$=m@s_47*^-pmck(gke^ey0x-6t#(1&!%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1',]
+ALLOWED_HOSTS = ['127.0.0.1','ebwin.pythonanywhere.com',]
 
 
 # Application definition
