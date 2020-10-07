@@ -11,14 +11,18 @@
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-        <title>Blog Edwin</title>
+        <title>Django Girls blog</title>
     </head>
     <body>
         <div class="page-header">
           {% if user.is_authenticated %}
           <a href="{% url 'publicacion_nueva' %}" class="top-menu"><span class="fa fa-plus"></span></a>
+          <a href="{% url 'publicacion_borrador_lista' %}" class="top-menu"><span class="fa fa-edit"></span></a>
+          <p class="top-menu">Bienvenido {{ user.username }} <small>(<a href="{% url 'logout' %}">Log out</a>)</small></p>
+          {% else %}
+              <a href="{% url 'login' %}" class="top-menu"><span class="fa fa-lock"></span></a>
           {% endif %}
-            <h1><a href="/">Blog Publicaciones Edwin Cotom</a></h1>
+            <h1><a href="/">Blog publicaciones Edwin Cotom</a></h1>
         </div>
 
         <div class="content container">
