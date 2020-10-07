@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '7!!1y8h=getyq#c2d$=m@s_47*^-pmck(gke^ey0x-6t#(1&!%'
+SECRET_KEY = 'o=cxp!1)g95@-68w%7+sa6ckx1r5w5hvfv)@6o9hj0miu*xuu@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','ebwin.pythonanywhere.com',]
+ALLOWED_HOSTS = ['127.0.0.1','suevi1.pythonanywhere.com', 'href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"', 'src="https://code.jquery.com/jquery-3.5.1.slim.min.js"', 'src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"', 'src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"',]
 
 
 # Application definition
@@ -122,6 +122,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT=os.path.join(BASE_DIR,'static')
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 X_FRAME_OPTIONS='SAMEORIGIN'
